@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="emails">
+        <item>1@mail.ru</item>
+        <item>2@mail.ru</item>
+        <item>3@mail.ru</item>
+        <item>4@mail.ru</item>
+        <item>5@mail.ru</item>
+    </string-array>
+</resources>
