@@ -1,0 +1,182 @@
+[
+    {
+        "merged": "C:\\Users\\Artur\\.gradle\\daemon\\8.0\\com.example.myapplication.app-merged_res-45:\\mipmap-mdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\Artur\\.gradle\\daemon\\8.0\\com.example.myapplication.app-main-47:\\mipmap-mdpi\\ic_launcher.webp"
+    },
+    {
+        "merged": "C:\\Users\\Artur\\.gradle\\daemon\\8.0\\com.example.myapplication.app-merged_res-45:\\xml_backup_rules.xml.flat",
+        "source": "C:\\Users\\Artur\\.gradle\\daemon\\8.0\\com.example.myapplication.app-main-47:\\xml\\backup_rules.xml"
+    },
+    {
+        "merged": "C:\\Users\\Artur\\.gradle\\daemon\\8.0\\com.example.myapplication.app-merged_res-45:\\layout_activity_main.xml.flat",
+        "source": "C:\\Users\\Artur\\.gradle\\daemon\\8.0\\com.example.myapplication.app-main-47:\\layout\\activity_main.xml"
+    },
+    {
+        "merged": "C:\\Users\\Artur\\.gradle\\daemon\\8.0\\com.example.myapplication.app-merged_res-45:\\drawable_food9.xml.flat",
+        "source": "C:\\Users\\Artur\\.gradle\\daemon\\8.0\\com.example.myapplication.app-main-47:\\drawable\\food9.xml"
+    },
+    {
+        "merged": "C:\\Users\\Artur\\.gradle\\daemon\\8.0\\com.example.myapplication.app-merged_res-45:\\layout-land_activity_main.xml.flat",
+        "source": "C:\\Users\\Artur\\.gradle\\daemon\\8.0\\com.example.myapplication.app-main-47:\\layout-land\\activity_main.xml"
+    },
+    {
+        "merged": "C:\\Users\\Artur\\.gradle\\daemon\\8.0\\com.example.myapplication.app-merged_res-45:\\mipmap-xxhdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\Artur\\.gradle\\daemon\\8.0\\com.example.myapplication.app-main-47:\\mipmap-xxhdpi\\ic_launcher_round.webp"
+    },
+    {
+        "merged": "C:\\Users\\Artur\\.gradle\\daemon\\8.0\\com.example.myapplication.app-merged_res-45:\\drawable_food2.xml.flat",
+        "source": "C:\\Users\\Artur\\.gradle\\daemon\\8.0\\com.example.myapplication.app-main-47:\\drawable\\food2.xml"
+    },
+    {
+        "merged": "C:\\Users\\Artur\\.gradle\\daemon\\8.0\\com.example.myapplication.app-merged_res-45:\\drawable_ic_dashboard_black_24dp.xml.flat",
+        "source": "C:\\Users\\Artur\\.gradle\\daemon\\8.0\\com.example.myapplication.app-main-47:\\drawable\\ic_dashboard_black_24dp.xml"
+    },
+    {
+        "merged": "C:\\Users\\Artur\\.gradle\\daemon\\8.0\\com.example.myapplication.app-merged_res-45:\\mipmap-xhdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\Artur\\.gradle\\daemon\\8.0\\com.example.myapplication.app-main-47:\\mipmap-xhdpi\\ic_launcher_round.webp"
+    },
+    {
+        "merged": "C:\\Users\\Artur\\.gradle\\daemon\\8.0\\com.example.myapplication.app-merged_res-45:\\mipmap-xxxhdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\Artur\\.gradle\\daemon\\8.0\\com.example.myapplication.app-main-47:\\mipmap-xxxhdpi\\ic_launcher.webp"
+    },
+    {
+        "merged": "C:\\Users\\Artur\\.gradle\\daemon\\8.0\\com.example.myapplication.app-merged_res-45:\\drawable_ic_launcher_foreground.xml.flat",
+        "source": "C:\\Users\\Artur\\.gradle\\daemon\\8.0\\com.example.myapplication.app-main-47:\\drawable\\ic_launcher_foreground.xml"
+    },
+    {
+        "merged": "C:\\Users\\Artur\\.gradle\\daemon\\8.0\\com.example.myapplication.app-merged_res-45:\\mipmap-xxxhdpi_ic_launcher_foreground.webp.flat",
+        "source": "C:\\Users\\Artur\\.gradle\\daemon\\8.0\\com.example.myapplication.app-main-47:\\mipmap-xxxhdpi\\ic_launcher_foreground.webp"
+    },
+    {
+        "merged": "C:\\Users\\Artur\\.gradle\\daemon\\8.0\\com.example.myapplication.app-merged_res-45:\\drawable_food7.xml.flat",
+        "source": "C:\\Users\\Artur\\.gradle\\daemon\\8.0\\com.example.myapplication.app-main-47:\\drawable\\food7.xml"
+    },
+    {
+        "merged": "C:\\Users\\Artur\\.gradle\\daemon\\8.0\\com.example.myapplication.app-merged_res-45:\\mipmap-xxhdpi_ic_launcher_foreground.webp.flat",
+        "source": "C:\\Users\\Artur\\.gradle\\daemon\\8.0\\com.example.myapplication.app-main-47:\\mipmap-xxhdpi\\ic_launcher_foreground.webp"
+    },
+    {
+        "merged": "C:\\Users\\Artur\\.gradle\\daemon\\8.0\\com.example.myapplication.app-merged_res-45:\\layout_action_favorites.xml.flat",
+        "source": "C:\\Users\\Artur\\.gradle\\daemon\\8.0\\com.example.myapplication.app-main-47:\\layout\\action_favorites.xml"
+    },
+    {
+        "merged": "C:\\Users\\Artur\\.gradle\\daemon\\8.0\\com.example.myapplication.app-merged_res-45:\\navigation_mobile_navigation.xml.flat",
+        "source": "C:\\Users\\Artur\\.gradle\\daemon\\8.0\\com.example.myapplication.app-main-47:\\navigation\\mobile_navigation.xml"
+    },
+    {
+        "merged": "C:\\Users\\Artur\\.gradle\\daemon\\8.0\\com.example.myapplication.app-merged_res-45:\\drawable_food3.xml.flat",
+        "source": "C:\\Users\\Artur\\.gradle\\daemon\\8.0\\com.example.myapplication.app-main-47:\\drawable\\food3.xml"
+    },
+    {
+        "merged": "C:\\Users\\Artur\\.gradle\\daemon\\8.0\\com.example.myapplication.app-merged_res-45:\\mipmap-xxhdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\Artur\\.gradle\\daemon\\8.0\\com.example.myapplication.app-main-47:\\mipmap-xxhdpi\\ic_launcher.webp"
+    },
+    {
+        "merged": "C:\\Users\\Artur\\.gradle\\daemon\\8.0\\com.example.myapplication.app-merged_res-45:\\layout_activity_main2.xml.flat",
+        "source": "C:\\Users\\Artur\\.gradle\\daemon\\8.0\\com.example.myapplication.app-main-47:\\layout\\activity_main2.xml"
+    },
+    {
+        "merged": "C:\\Users\\Artur\\.gradle\\daemon\\8.0\\com.example.myapplication.app-merged_res-45:\\drawable_food5.xml.flat",
+        "source": "C:\\Users\\Artur\\.gradle\\daemon\\8.0\\com.example.myapplication.app-main-47:\\drawable\\food5.xml"
+    },
+    {
+        "merged": "C:\\Users\\Artur\\.gradle\\daemon\\8.0\\com.example.myapplication.app-merged_res-45:\\layout_action_recipe.xml.flat",
+        "source": "C:\\Users\\Artur\\.gradle\\daemon\\8.0\\com.example.myapplication.app-main-47:\\layout\\action_recipe.xml"
+    },
+    {
+        "merged": "C:\\Users\\Artur\\.gradle\\daemon\\8.0\\com.example.myapplication.app-merged_res-45:\\layout_recipe_item.xml.flat",
+        "source": "C:\\Users\\Artur\\.gradle\\daemon\\8.0\\com.example.myapplication.app-main-47:\\layout\\recipe_item.xml"
+    },
+    {
+        "merged": "C:\\Users\\Artur\\.gradle\\daemon\\8.0\\com.example.myapplication.app-merged_res-45:\\mipmap-mdpi_ic_launcher_foreground.webp.flat",
+        "source": "C:\\Users\\Artur\\.gradle\\daemon\\8.0\\com.example.myapplication.app-main-47:\\mipmap-mdpi\\ic_launcher_foreground.webp"
+    },
+    {
+        "merged": "C:\\Users\\Artur\\.gradle\\daemon\\8.0\\com.example.myapplication.app-merged_res-45:\\layout_selected_recipe.xml.flat",
+        "source": "C:\\Users\\Artur\\.gradle\\daemon\\8.0\\com.example.myapplication.app-main-47:\\layout\\selected_recipe.xml"
+    },
+    {
+        "merged": "C:\\Users\\Artur\\.gradle\\daemon\\8.0\\com.example.myapplication.app-merged_res-45:\\drawable_ic_home_black_24dp.xml.flat",
+        "source": "C:\\Users\\Artur\\.gradle\\daemon\\8.0\\com.example.myapplication.app-main-47:\\drawable\\ic_home_black_24dp.xml"
+    },
+    {
+        "merged": "C:\\Users\\Artur\\.gradle\\daemon\\8.0\\com.example.myapplication.app-merged_res-45:\\mipmap-xhdpi_ic_launcher_foreground.webp.flat",
+        "source": "C:\\Users\\Artur\\.gradle\\daemon\\8.0\\com.example.myapplication.app-main-47:\\mipmap-xhdpi\\ic_launcher_foreground.webp"
+    },
+    {
+        "merged": "C:\\Users\\Artur\\.gradle\\daemon\\8.0\\com.example.myapplication.app-merged_res-45:\\mipmap-hdpi_ic_launcher_foreground.webp.flat",
+        "source": "C:\\Users\\Artur\\.gradle\\daemon\\8.0\\com.example.myapplication.app-main-47:\\mipmap-hdpi\\ic_launcher_foreground.webp"
+    },
+    {
+        "merged": "C:\\Users\\Artur\\.gradle\\daemon\\8.0\\com.example.myapplication.app-merged_res-45:\\drawable_food8.xml.flat",
+        "source": "C:\\Users\\Artur\\.gradle\\daemon\\8.0\\com.example.myapplication.app-main-47:\\drawable\\food8.xml"
+    },
+    {
+        "merged": "com.example.myapplication.app-merged_res-45:/layout_selected_recipe.xml.flat",
+        "source": "com.example.myapplication.app-main-47:/layout/selected_recipe.xml"
+    },
+    {
+        "merged": "C:\\Users\\Artur\\.gradle\\daemon\\8.0\\com.example.myapplication.app-merged_res-45:\\mipmap-xxxhdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\Artur\\.gradle\\daemon\\8.0\\com.example.myapplication.app-main-47:\\mipmap-xxxhdpi\\ic_launcher_round.webp"
+    },
+    {
+        "merged": "C:\\Users\\Artur\\.gradle\\daemon\\8.0\\com.example.myapplication.app-merged_res-45:\\mipmap-hdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\Artur\\.gradle\\daemon\\8.0\\com.example.myapplication.app-main-47:\\mipmap-hdpi\\ic_launcher_round.webp"
+    },
+    {
+        "merged": "C:\\Users\\Artur\\.gradle\\daemon\\8.0\\com.example.myapplication.app-merged_res-45:\\mipmap-anydpi-v26_ic_launcher_round.xml.flat",
+        "source": "C:\\Users\\Artur\\.gradle\\daemon\\8.0\\com.example.myapplication.app-main-47:\\mipmap-anydpi-v26\\ic_launcher_round.xml"
+    },
+    {
+        "merged": "C:\\Users\\Artur\\.gradle\\daemon\\8.0\\com.example.myapplication.app-merged_res-45:\\drawable_food1.xml.flat",
+        "source": "C:\\Users\\Artur\\.gradle\\daemon\\8.0\\com.example.myapplication.app-main-47:\\drawable\\food1.xml"
+    },
+    {
+        "merged": "C:\\Users\\Artur\\.gradle\\daemon\\8.0\\com.example.myapplication.app-merged_res-45:\\drawable_food10.xml.flat",
+        "source": "C:\\Users\\Artur\\.gradle\\daemon\\8.0\\com.example.myapplication.app-main-47:\\drawable\\food10.xml"
+    },
+    {
+        "merged": "C:\\Users\\Artur\\.gradle\\daemon\\8.0\\com.example.myapplication.app-merged_res-45:\\xml_data_extraction_rules.xml.flat",
+        "source": "C:\\Users\\Artur\\.gradle\\daemon\\8.0\\com.example.myapplication.app-main-47:\\xml\\data_extraction_rules.xml"
+    },
+    {
+        "merged": "C:\\Users\\Artur\\.gradle\\daemon\\8.0\\com.example.myapplication.app-merged_res-45:\\drawable_food4.xml.flat",
+        "source": "C:\\Users\\Artur\\.gradle\\daemon\\8.0\\com.example.myapplication.app-main-47:\\drawable\\food4.xml"
+    },
+    {
+        "merged": "C:\\Users\\Artur\\.gradle\\daemon\\8.0\\com.example.myapplication.app-merged_res-45:\\drawable_ic_launcher_background.xml.flat",
+        "source": "C:\\Users\\Artur\\.gradle\\daemon\\8.0\\com.example.myapplication.app-main-47:\\drawable\\ic_launcher_background.xml"
+    },
+    {
+        "merged": "C:\\Users\\Artur\\.gradle\\daemon\\8.0\\com.example.myapplication.app-merged_res-45:\\mipmap-mdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\Artur\\.gradle\\daemon\\8.0\\com.example.myapplication.app-main-47:\\mipmap-mdpi\\ic_launcher_round.webp"
+    },
+    {
+        "merged": "C:\\Users\\Artur\\.gradle\\daemon\\8.0\\com.example.myapplication.app-merged_res-45:\\mipmap-hdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\Artur\\.gradle\\daemon\\8.0\\com.example.myapplication.app-main-47:\\mipmap-hdpi\\ic_launcher.webp"
+    },
+    {
+        "merged": "C:\\Users\\Artur\\.gradle\\daemon\\8.0\\com.example.myapplication.app-merged_res-45:\\drawable_food6.xml.flat",
+        "source": "C:\\Users\\Artur\\.gradle\\daemon\\8.0\\com.example.myapplication.app-main-47:\\drawable\\food6.xml"
+    },
+    {
+        "merged": "C:\\Users\\Artur\\.gradle\\daemon\\8.0\\com.example.myapplication.app-merged_res-45:\\drawable_ic_notifications_black_24dp.xml.flat",
+        "source": "C:\\Users\\Artur\\.gradle\\daemon\\8.0\\com.example.myapplication.app-main-47:\\drawable\\ic_notifications_black_24dp.xml"
+    },
+    {
+        "merged": "C:\\Users\\Artur\\.gradle\\daemon\\8.0\\com.example.myapplication.app-merged_res-45:\\mipmap-anydpi-v26_ic_launcher.xml.flat",
+        "source": "C:\\Users\\Artur\\.gradle\\daemon\\8.0\\com.example.myapplication.app-main-47:\\mipmap-anydpi-v26\\ic_launcher.xml"
+    },
+    {
+        "merged": "C:\\Users\\Artur\\.gradle\\daemon\\8.0\\com.example.myapplication.app-merged_res-45:\\menu_bottom_nav_menu.xml.flat",
+        "source": "C:\\Users\\Artur\\.gradle\\daemon\\8.0\\com.example.myapplication.app-main-47:\\menu\\bottom_nav_menu.xml"
+    },
+    {
+        "merged": "C:\\Users\\Artur\\.gradle\\daemon\\8.0\\com.example.myapplication.app-merged_res-45:\\drawable___.png.flat",
+        "source": "C:\\Users\\Artur\\.gradle\\daemon\\8.0\\com.example.myapplication.app-main-47:\\drawable\\__.png"
+    },
+    {
+        "merged": "C:\\Users\\Artur\\.gradle\\daemon\\8.0\\com.example.myapplication.app-merged_res-45:\\mipmap-xhdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\Artur\\.gradle\\daemon\\8.0\\com.example.myapplication.app-main-47:\\mipmap-xhdpi\\ic_launcher.webp"
+    }
+]

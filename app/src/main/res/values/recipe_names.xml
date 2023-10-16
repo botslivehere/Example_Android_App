@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="recipe_names">
+        <item>Рецепт 1</item>
+        <item>Рецепт 2</item>
+        <item>Рецепт 3</item>
+        <item>Рецепт 4</item>
+        <item>Рецепт 5</item>
+        <item>Рецепт 6</item>
+        <item>Рецепт 7</item>
+        <item>Рецепт 8</item>
+        <item>Рецепт 9</item>
+        <item>Рецепт 10</item>
+        <item>Рецепт 11</item>
+        <item>Рецепт 12</item>
+        <item>Рецепт 13</item>
+        <item>Рецепт 14</item>
+        <item>Рецепт 15</item>
+        <item>Рецепт 16</item>
+        <item>Рецепт 17</item>
+        <item>Рецепт 18</item>
+        <item>Рецепт 19</item>
+        <item>Рецепт 20</item>
+        <item>Рецепт 21</item>
+        <item>Рецепт 22</item>
+        <item>Рецепт 23</item>
+        <item>Рецепт 24</item>
+        <item>Рецепт 25</item>
+    </string-array>
+</resources>
