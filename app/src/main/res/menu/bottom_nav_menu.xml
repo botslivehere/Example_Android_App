@@ -9,12 +9,12 @@
     <item
         android:id="@+id/action_selected_recipe"
         android:icon="@android:drawable/ic_menu_view"
-        android:title="Выбранный рецепт" />
+        android:title="Выбранное" />
 
     <item
         android:id="@+id/action_favorites"
         android:icon="@android:drawable/btn_star_big_off"
-        android:title="Любимые рецепты" />
+        android:title="Избранное" />
 
 
 </menu>
