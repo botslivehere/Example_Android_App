@@ -12,6 +12,15 @@
         android:orientation="vertical"
         android:padding="16dp">
 
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Вы выбрали:"
+            android:textSize="32sp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            ></TextView>
+
         <ImageView
             android:id="@+id/recipeImage"
             android:layout_width="200dp"

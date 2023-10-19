@@ -1847,7 +1847,7 @@
             "outputFile": "com.example.myapplication.app-merged_res-45:/values-night-v8_values-night-v8.arsc.flat",
             "map": [
                 {
-                    "source": "C:\\Users\\Artur\\StudioProjects\\5\\app\\src\\main\\res\\values-night\\themes.xml",
+                    "source": "C:\\Users\\Artur\\StudioProjects\\4\\app\\src\\main\\res\\values-night\\themes.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
@@ -3512,22 +3512,20 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\Artur\\StudioProjects\\5\\app\\src\\main\\res\\values\\mails.xml",
+                    "source": "C:\\Users\\Artur\\StudioProjects\\4\\app\\src\\main\\res\\values\\dimens.xml",
                     "from": {
-                        "startLines": "2",
-                        "startColumns": "4",
-                        "startOffsets": "57",
-                        "endLines": "8",
-                        "endColumns": "19",
-                        "endOffsets": "266"
+                        "startLines": "2,3",
+                        "startColumns": "4,4",
+                        "startOffsets": "90,149",
+                        "endColumns": "57,55",
+                        "endOffsets": "143,200"
                     },
                     "to": {
-                        "startLines": "2",
-                        "startColumns": "4",
-                        "startOffsets": "150",
-                        "endLines": "8",
-                        "endColumns": "19",
-                        "endOffsets": "353"
+                        "startLines": "1049,1050",
+                        "startColumns": "4,4",
+                        "startOffsets": "59266,59324",
+                        "endColumns": "57,55",
+                        "endOffsets": "59319,59375"
                     }
                 },
                 {
@@ -3586,23 +3584,6 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\Artur\\StudioProjects\\5\\app\\src\\main\\res\\values\\strings.xml",
-                    "from": {
-                        "startLines": "1,7,2,4,3,5",
-                        "startColumns": "4,4,4,4,4,4",
-                        "startOffsets": "17,356,70,179,134,234",
-                        "endColumns": "51,69,62,53,43,61",
-                        "endOffsets": "64,421,128,228,173,291"
-                    },
-                    "to": {
-                        "startLines": "1886,1905,2026,2027,2028,2029",
-                        "startColumns": "4,4,4,4,4,4",
-                        "startOffsets": "118915,121211,138610,138673,138727,138771",
-                        "endColumns": "51,69,62,53,43,61",
-                        "endOffsets": "118962,121276,138668,138722,138766,138828"
-                    }
-                },
-                {
                     "source": "C:\\Users\\Artur\\.gradle\\caches\\transforms-3\\c28d8d8bc94146d40cf0ebdf399e8641\\transformed\\recyclerview-1.2.1\\res\\values\\values.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10",
@@ -3622,20 +3603,22 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\Artur\\StudioProjects\\5\\app\\src\\main\\res\\values\\colors.xml",
+                    "source": "C:\\Users\\Artur\\StudioProjects\\4\\app\\src\\main\\res\\values\\food_desctiption.xml",
                     "from": {
-                        "startLines": "2,4,3",
-                        "startColumns": "4,4,4",
-                        "startOffsets": "57,143,100",
-                        "endColumns": "41,37,41",
-                        "endOffsets": "94,176,137"
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "57",
+                        "endLines": "12",
+                        "endColumns": "19",
+                        "endOffsets": "840"
                     },
                     "to": {
-                        "startLines": "701,954,967",
-                        "startColumns": "4,4,4",
-                        "startOffsets": "34609,52919,53775",
-                        "endColumns": "41,37,41",
-                        "endOffsets": "34646,52952,53812"
+                        "startLines": "9",
+                        "startColumns": "4",
+                        "startOffsets": "358",
+                        "endLines": "19",
+                        "endColumns": "19",
+                        "endOffsets": "1131"
                     }
                 },
                 {
@@ -3715,7 +3698,7 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\Artur\\StudioProjects\\5\\app\\src\\main\\res\\values\\recipe_names.xml",
+                    "source": "C:\\Users\\Artur\\StudioProjects\\4\\app\\src\\main\\res\\values\\recipe_names.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
@@ -3731,6 +3714,42 @@
                         "endLines": "75",
                         "endColumns": "19",
                         "endOffsets": "2840"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\Artur\\StudioProjects\\4\\app\\src\\main\\res\\values\\arrays.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "57",
+                        "endLines": "12",
+                        "endColumns": "20",
+                        "endOffsets": "457"
+                    },
+                    "to": {
+                        "startLines": "38",
+                        "startColumns": "4",
+                        "startOffsets": "1625",
+                        "endLines": "48",
+                        "endColumns": "20",
+                        "endOffsets": "2015"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\Artur\\StudioProjects\\4\\app\\src\\main\\res\\values\\strings.xml",
+                    "from": {
+                        "startLines": "1,7,2,4,3,5",
+                        "startColumns": "4,4,4,4,4,4",
+                        "startOffsets": "17,356,70,179,134,234",
+                        "endColumns": "51,69,62,53,43,61",
+                        "endOffsets": "64,421,128,228,173,291"
+                    },
+                    "to": {
+                        "startLines": "1886,1905,2026,2027,2028,2029",
+                        "startColumns": "4,4,4,4,4,4",
+                        "startOffsets": "118915,121211,138610,138673,138727,138771",
+                        "endColumns": "51,69,62,53,43,61",
+                        "endOffsets": "118962,121276,138668,138722,138766,138828"
                     }
                 },
                 {
@@ -3772,25 +3791,6 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\Artur\\StudioProjects\\5\\app\\src\\main\\res\\values\\food_desctiption.xml",
-                    "from": {
-                        "startLines": "2",
-                        "startColumns": "4",
-                        "startOffsets": "57",
-                        "endLines": "12",
-                        "endColumns": "19",
-                        "endOffsets": "840"
-                    },
-                    "to": {
-                        "startLines": "9",
-                        "startColumns": "4",
-                        "startOffsets": "358",
-                        "endLines": "19",
-                        "endColumns": "19",
-                        "endOffsets": "1131"
-                    }
-                },
-                {
                     "source": "C:\\Users\\Artur\\.gradle\\caches\\transforms-3\\6ec05e27f9a99b7d4d0c160ae85ef681\\transformed\\navigation-runtime-2.5.3\\res\\values\\values.xml",
                     "from": {
                         "startLines": "2,3,10,13",
@@ -3810,26 +3810,26 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\Artur\\StudioProjects\\5\\app\\src\\main\\res\\values\\themes.xml",
+                    "source": "C:\\Users\\Artur\\StudioProjects\\4\\app\\src\\main\\res\\values\\mails.xml",
                     "from": {
-                        "startLines": "2,7",
-                        "startColumns": "4,4",
-                        "startOffsets": "102,335",
-                        "endLines": "5,7",
-                        "endColumns": "12,74",
-                        "endOffsets": "327,405"
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "57",
+                        "endLines": "8",
+                        "endColumns": "19",
+                        "endOffsets": "266"
                     },
                     "to": {
-                        "startLines": "2437,6308",
-                        "startColumns": "4,4",
-                        "startOffsets": "165624,434155",
-                        "endLines": "2440,6308",
-                        "endColumns": "12,73",
-                        "endOffsets": "165740,434224"
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "150",
+                        "endLines": "8",
+                        "endColumns": "19",
+                        "endOffsets": "353"
                     }
                 },
                 {
-                    "source": "C:\\Users\\Artur\\StudioProjects\\5\\app\\src\\main\\res\\values\\food_name.xml",
+                    "source": "C:\\Users\\Artur\\StudioProjects\\4\\app\\src\\main\\res\\values\\food_name.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
@@ -3845,25 +3845,6 @@
                         "endLines": "30",
                         "endColumns": "19",
                         "endOffsets": "1440"
-                    }
-                },
-                {
-                    "source": "C:\\Users\\Artur\\StudioProjects\\5\\app\\src\\main\\res\\values\\arrays.xml",
-                    "from": {
-                        "startLines": "2",
-                        "startColumns": "4",
-                        "startOffsets": "57",
-                        "endLines": "12",
-                        "endColumns": "20",
-                        "endOffsets": "457"
-                    },
-                    "to": {
-                        "startLines": "38",
-                        "startColumns": "4",
-                        "startOffsets": "1625",
-                        "endLines": "48",
-                        "endColumns": "20",
-                        "endOffsets": "2015"
                     }
                 },
                 {
@@ -3941,23 +3922,6 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\Artur\\StudioProjects\\5\\app\\src\\main\\res\\values\\ic_launcher_background.xml",
-                    "from": {
-                        "startLines": "2",
-                        "startColumns": "4",
-                        "startOffsets": "57",
-                        "endColumns": "56",
-                        "endOffsets": "109"
-                    },
-                    "to": {
-                        "startLines": "759",
-                        "startColumns": "4",
-                        "startOffsets": "38645",
-                        "endColumns": "56",
-                        "endOffsets": "38697"
-                    }
-                },
-                {
                     "source": "C:\\Users\\Artur\\.gradle\\caches\\transforms-3\\b791a40a35adcfb1e3c6118d5ce3a6bb\\transformed\\savedstate-1.2.1\\res\\values\\values.xml",
                     "from": {
                         "startLines": "2",
@@ -3991,6 +3955,23 @@
                         "endLines": "193,196,1063,10865",
                         "endColumns": "55,47,51,24",
                         "endOffsets": "8661,8817,60205,675596"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\Artur\\StudioProjects\\4\\app\\src\\main\\res\\values\\colors.xml",
+                    "from": {
+                        "startLines": "2,4,3",
+                        "startColumns": "4,4,4",
+                        "startOffsets": "57,143,100",
+                        "endColumns": "41,37,41",
+                        "endOffsets": "94,176,137"
+                    },
+                    "to": {
+                        "startLines": "701,954,967",
+                        "startColumns": "4,4,4",
+                        "startOffsets": "34609,52919,53775",
+                        "endColumns": "41,37,41",
+                        "endOffsets": "34646,52952,53812"
                     }
                 },
                 {
@@ -4030,7 +4011,7 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\Artur\\StudioProjects\\5\\app\\src\\main\\res\\values\\passwords.xml",
+                    "source": "C:\\Users\\Artur\\StudioProjects\\4\\app\\src\\main\\res\\values\\passwords.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
@@ -4049,20 +4030,20 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\Artur\\StudioProjects\\5\\app\\src\\main\\res\\values\\dimens.xml",
+                    "source": "C:\\Users\\Artur\\StudioProjects\\4\\app\\src\\main\\res\\values\\ic_launcher_background.xml",
                     "from": {
-                        "startLines": "2,3",
-                        "startColumns": "4,4",
-                        "startOffsets": "90,149",
-                        "endColumns": "57,55",
-                        "endOffsets": "143,200"
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "57",
+                        "endColumns": "56",
+                        "endOffsets": "109"
                     },
                     "to": {
-                        "startLines": "1049,1050",
-                        "startColumns": "4,4",
-                        "startOffsets": "59266,59324",
-                        "endColumns": "57,55",
-                        "endOffsets": "59319,59375"
+                        "startLines": "759",
+                        "startColumns": "4",
+                        "startOffsets": "38645",
+                        "endColumns": "56",
+                        "endOffsets": "38697"
                     }
                 },
                 {
@@ -4097,6 +4078,25 @@
                         "startOffsets": "118832",
                         "endColumns": "82",
                         "endOffsets": "118910"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\Artur\\StudioProjects\\4\\app\\src\\main\\res\\values\\themes.xml",
+                    "from": {
+                        "startLines": "2,7",
+                        "startColumns": "4,4",
+                        "startOffsets": "102,335",
+                        "endLines": "5,7",
+                        "endColumns": "12,74",
+                        "endOffsets": "327,405"
+                    },
+                    "to": {
+                        "startLines": "2437,6308",
+                        "startColumns": "4,4",
+                        "startOffsets": "165624,434155",
+                        "endLines": "2440,6308",
+                        "endColumns": "12,73",
+                        "endOffsets": "165740,434224"
                     }
                 }
             ]
