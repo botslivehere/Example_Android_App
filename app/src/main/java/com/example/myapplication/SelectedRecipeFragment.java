@@ -21,6 +21,7 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 import androidx.swiperefreshlayout.widget.SwipeRefreshLayout;
 
+import java.util.Objects;
 
 
 public class SelectedRecipeFragment extends Fragment {
@@ -44,14 +45,20 @@ public class SelectedRecipeFragment extends Fragment {
         }
         imagesArray.recycle();
 
-        if (getArguments() != null) {
-            int recipeId = getArguments().getInt("recipeId");
+        MainActivity2 mainActivity = (MainActivity2) getActivity();
 
-            recipeTitleTextView.setText(recipeTitles[recipeId%9]);
-            recipeDescriptionTextView.setText(recipeDescriptions[recipeId%9]);
-            recipeImageView.setImageResource(images[recipeId%9]);
+        int currentRecipeId = -1;
+
+        if (savedInstanceState != null && mainActivity != null) {
+            currentRecipeId = mainActivity.getCurrentRecipeId();
+        } else if (getArguments() != null) {
+            currentRecipeId = getArguments().getInt("recipeId", 0);
+            if (mainActivity != null) mainActivity.setCurrentRecipeId(currentRecipeId);
         }
 
+        recipeTitleTextView.setText(recipeTitles[currentRecipeId % 9]);
+        recipeDescriptionTextView.setText(recipeDescriptions[currentRecipeId % 9]);
+        recipeImageView.setImageResource(images[currentRecipeId % 9]);
 
         return view;
     }

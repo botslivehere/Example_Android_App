@@ -76,12 +76,12 @@
         "source": "C:\\Users\\Artur\\.gradle\\daemon\\8.0\\com.example.myapplication.app-main-47:\\layout\\activity_main2.xml"
     },
     {
-        "merged": "C:\\Users\\Artur\\.gradle\\daemon\\8.0\\com.example.myapplication.app-merged_res-45:\\drawable_food5.xml.flat",
-        "source": "C:\\Users\\Artur\\.gradle\\daemon\\8.0\\com.example.myapplication.app-main-47:\\drawable\\food5.xml"
-    },
-    {
         "merged": "C:\\Users\\Artur\\.gradle\\daemon\\8.0\\com.example.myapplication.app-merged_res-45:\\layout_action_recipe.xml.flat",
         "source": "C:\\Users\\Artur\\.gradle\\daemon\\8.0\\com.example.myapplication.app-main-47:\\layout\\action_recipe.xml"
+    },
+    {
+        "merged": "C:\\Users\\Artur\\.gradle\\daemon\\8.0\\com.example.myapplication.app-merged_res-45:\\drawable_food5.xml.flat",
+        "source": "C:\\Users\\Artur\\.gradle\\daemon\\8.0\\com.example.myapplication.app-main-47:\\drawable\\food5.xml"
     },
     {
         "merged": "C:\\Users\\Artur\\.gradle\\daemon\\8.0\\com.example.myapplication.app-merged_res-45:\\layout_recipe_item.xml.flat",
@@ -132,8 +132,8 @@
         "source": "C:\\Users\\Artur\\.gradle\\daemon\\8.0\\com.example.myapplication.app-main-47:\\drawable\\food1.xml"
     },
     {
-        "merged": "C:\\Users\\Artur\\.gradle\\daemon\\8.0\\com.example.myapplication.app-merged_res-45:\\drawable_food10.xml.flat",
-        "source": "C:\\Users\\Artur\\.gradle\\daemon\\8.0\\com.example.myapplication.app-main-47:\\drawable\\food10.xml"
+        "merged": "C:\\Users\\Artur\\.gradle\\daemon\\8.0\\com.example.myapplication.app-merged_res-45:\\layout-land_recipe_item.xml.flat",
+        "source": "C:\\Users\\Artur\\.gradle\\daemon\\8.0\\com.example.myapplication.app-main-47:\\layout-land\\recipe_item.xml"
     },
     {
         "merged": "C:\\Users\\Artur\\.gradle\\daemon\\8.0\\com.example.myapplication.app-merged_res-45:\\xml_data_extraction_rules.xml.flat",

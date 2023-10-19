@@ -5,7 +5,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
-import android.widget.LinearLayout;
+import android.widget.ScrollView;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -18,7 +18,7 @@ import java.lang.String;
 
 public final class SelectedRecipeBinding implements ViewBinding {
   @NonNull
-  private final LinearLayout rootView;
+  private final ScrollView rootView;
 
   @NonNull
   public final TextView recipeDescription;
@@ -29,7 +29,7 @@ public final class SelectedRecipeBinding implements ViewBinding {
   @NonNull
   public final TextView recipeTitle;
 
-  private SelectedRecipeBinding(@NonNull LinearLayout rootView, @NonNull TextView recipeDescription,
+  private SelectedRecipeBinding(@NonNull ScrollView rootView, @NonNull TextView recipeDescription,
       @NonNull ImageView recipeImage, @NonNull TextView recipeTitle) {
     this.rootView = rootView;
     this.recipeDescription = recipeDescription;
@@ -39,7 +39,7 @@ public final class SelectedRecipeBinding implements ViewBinding {
 
   @Override
   @NonNull
-  public LinearLayout getRoot() {
+  public ScrollView getRoot() {
     return rootView;
   }
 
@@ -82,7 +82,7 @@ public final class SelectedRecipeBinding implements ViewBinding {
         break missingId;
       }
 
-      return new SelectedRecipeBinding((LinearLayout) rootView, recipeDescription, recipeImage,
+      return new SelectedRecipeBinding((ScrollView) rootView, recipeDescription, recipeImage,
           recipeTitle);
     }
     String missingId = rootView.getResources().getResourceName(id);

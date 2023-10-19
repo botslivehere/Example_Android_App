@@ -20,51 +20,51 @@
 15-->[androidx.core:core:1.9.0] C:\Users\Artur\.gradle\caches\transforms-3\25d17c91d5902985514078e82b64555a\transformed\core-1.9.0\AndroidManifest.xml:26:22-94
 16
 17    <application
-17-->C:\Users\Artur\StudioProjects\3\app\src\main\AndroidManifest.xml:5:5-28:19
+17-->C:\Users\Artur\StudioProjects\5\app\src\main\AndroidManifest.xml:5:5-28:19
 18        android:allowBackup="true"
-18-->C:\Users\Artur\StudioProjects\3\app\src\main\AndroidManifest.xml:6:9-35
+18-->C:\Users\Artur\StudioProjects\5\app\src\main\AndroidManifest.xml:6:9-35
 19        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
 19-->[androidx.core:core:1.9.0] C:\Users\Artur\.gradle\caches\transforms-3\25d17c91d5902985514078e82b64555a\transformed\core-1.9.0\AndroidManifest.xml:28:18-86
 20        android:dataExtractionRules="@xml/data_extraction_rules"
-20-->C:\Users\Artur\StudioProjects\3\app\src\main\AndroidManifest.xml:7:9-65
+20-->C:\Users\Artur\StudioProjects\5\app\src\main\AndroidManifest.xml:7:9-65
 21        android:debuggable="true"
 22        android:extractNativeLibs="false"
 23        android:fullBackupContent="@xml/backup_rules"
-23-->C:\Users\Artur\StudioProjects\3\app\src\main\AndroidManifest.xml:8:9-54
+23-->C:\Users\Artur\StudioProjects\5\app\src\main\AndroidManifest.xml:8:9-54
 24        android:icon="@mipmap/ic_launcher"
-24-->C:\Users\Artur\StudioProjects\3\app\src\main\AndroidManifest.xml:9:9-43
+24-->C:\Users\Artur\StudioProjects\5\app\src\main\AndroidManifest.xml:9:9-43
 25        android:label="@string/app_name"
-25-->C:\Users\Artur\StudioProjects\3\app\src\main\AndroidManifest.xml:10:9-41
+25-->C:\Users\Artur\StudioProjects\5\app\src\main\AndroidManifest.xml:10:9-41
 26        android:roundIcon="@mipmap/ic_launcher_round"
-26-->C:\Users\Artur\StudioProjects\3\app\src\main\AndroidManifest.xml:11:9-54
+26-->C:\Users\Artur\StudioProjects\5\app\src\main\AndroidManifest.xml:11:9-54
 27        android:supportsRtl="true"
-27-->C:\Users\Artur\StudioProjects\3\app\src\main\AndroidManifest.xml:12:9-35
+27-->C:\Users\Artur\StudioProjects\5\app\src\main\AndroidManifest.xml:12:9-35
 28        android:testOnly="true"
 29        android:theme="@style/Theme.MyApplication" >
-29-->C:\Users\Artur\StudioProjects\3\app\src\main\AndroidManifest.xml:13:9-51
+29-->C:\Users\Artur\StudioProjects\5\app\src\main\AndroidManifest.xml:13:9-51
 30        <activity
-30-->C:\Users\Artur\StudioProjects\3\app\src\main\AndroidManifest.xml:15:9-18:60
+30-->C:\Users\Artur\StudioProjects\5\app\src\main\AndroidManifest.xml:15:9-18:60
 31            android:name="com.example.myapplication.MainActivity2"
-31-->C:\Users\Artur\StudioProjects\3\app\src\main\AndroidManifest.xml:16:13-42
+31-->C:\Users\Artur\StudioProjects\5\app\src\main\AndroidManifest.xml:16:13-42
 32            android:exported="false"
-32-->C:\Users\Artur\StudioProjects\3\app\src\main\AndroidManifest.xml:17:13-37
+32-->C:\Users\Artur\StudioProjects\5\app\src\main\AndroidManifest.xml:17:13-37
 33            android:label="@string/title_activity_main2" />
-33-->C:\Users\Artur\StudioProjects\3\app\src\main\AndroidManifest.xml:18:13-57
+33-->C:\Users\Artur\StudioProjects\5\app\src\main\AndroidManifest.xml:18:13-57
 34        <activity
-34-->C:\Users\Artur\StudioProjects\3\app\src\main\AndroidManifest.xml:19:9-27:20
+34-->C:\Users\Artur\StudioProjects\5\app\src\main\AndroidManifest.xml:19:9-27:20
 35            android:name="com.example.myapplication.MainActivity"
-35-->C:\Users\Artur\StudioProjects\3\app\src\main\AndroidManifest.xml:20:13-41
+35-->C:\Users\Artur\StudioProjects\5\app\src\main\AndroidManifest.xml:20:13-41
 36            android:exported="true" >
-36-->C:\Users\Artur\StudioProjects\3\app\src\main\AndroidManifest.xml:21:13-36
+36-->C:\Users\Artur\StudioProjects\5\app\src\main\AndroidManifest.xml:21:13-36
 37            <intent-filter>
-37-->C:\Users\Artur\StudioProjects\3\app\src\main\AndroidManifest.xml:22:13-26:29
+37-->C:\Users\Artur\StudioProjects\5\app\src\main\AndroidManifest.xml:22:13-26:29
 38                <action android:name="android.intent.action.MAIN" />
-38-->C:\Users\Artur\StudioProjects\3\app\src\main\AndroidManifest.xml:23:17-69
-38-->C:\Users\Artur\StudioProjects\3\app\src\main\AndroidManifest.xml:23:25-66
+38-->C:\Users\Artur\StudioProjects\5\app\src\main\AndroidManifest.xml:23:17-69
+38-->C:\Users\Artur\StudioProjects\5\app\src\main\AndroidManifest.xml:23:25-66
 39
 40                <category android:name="android.intent.category.LAUNCHER" />
-40-->C:\Users\Artur\StudioProjects\3\app\src\main\AndroidManifest.xml:25:17-77
-40-->C:\Users\Artur\StudioProjects\3\app\src\main\AndroidManifest.xml:25:27-74
+40-->C:\Users\Artur\StudioProjects\5\app\src\main\AndroidManifest.xml:25:17-77
+40-->C:\Users\Artur\StudioProjects\5\app\src\main\AndroidManifest.xml:25:27-74
 41            </intent-filter>
 42        </activity>
 43

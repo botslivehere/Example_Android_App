@@ -64,7 +64,7 @@ public class RecipeListFragment extends Fragment {
     public void loadMoreItems(RecipeAdapter adapter) {
         refreshLayout.setRefreshing(true);
         new Handler().postDelayed(() -> {
-            adapter.currentItemCount = Math.min(adapter.currentItemCount + 5, recipes.length);
+            adapter.currentItemCount = Math.min(adapter.currentItemCount + 10, recipes.length);
             adapter.notifyDataSetChanged();
             refreshLayout.setRefreshing(false);
         }, 1000);
