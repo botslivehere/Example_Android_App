@@ -1,8 +1,6 @@
 R_DEF: Internal format may change without notice
 local
 array emails
-array food_descriptions
-array food_name
 array password
 array recipe_images
 array recipe_names
@@ -27,6 +25,10 @@ drawable ic_home_black_24dp
 drawable ic_launcher_background
 drawable ic_launcher_foreground
 drawable ic_notifications_black_24dp
+id Calorie
+id Difficulty
+id Problem
+id Time
 id action_favorites
 id action_recipeListFragment_to_selectedRecipeFragment
 id action_selected_recipe
@@ -39,10 +41,8 @@ id mobile_navigation
 id nav_host_fragment_activity_main2
 id nav_view
 id recipeDescription
-id recipeImage
 id recipeListFragment
 id recipeTitle
-id recipe_image
 id recipe_name
 id recipesRecyclerView
 id refreshLayout

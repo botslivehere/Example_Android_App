@@ -112,6 +112,10 @@
         "source": "C:\\Users\\Artur\\.gradle\\daemon\\8.0\\com.example.myapplication.app-main-47:\\drawable\\food8.xml"
     },
     {
+        "merged": "com.example.myapplication.app-merged_res-45:/layout_selected_recipe.xml.flat",
+        "source": "com.example.myapplication.app-main-47:/layout/selected_recipe.xml"
+    },
+    {
         "merged": "C:\\Users\\Artur\\.gradle\\daemon\\8.0\\com.example.myapplication.app-merged_res-45:\\mipmap-xxxhdpi_ic_launcher_round.webp.flat",
         "source": "C:\\Users\\Artur\\.gradle\\daemon\\8.0\\com.example.myapplication.app-main-47:\\mipmap-xxxhdpi\\ic_launcher_round.webp"
     },
@@ -150,10 +154,6 @@
     {
         "merged": "C:\\Users\\Artur\\.gradle\\daemon\\8.0\\com.example.myapplication.app-merged_res-45:\\mipmap-hdpi_ic_launcher.webp.flat",
         "source": "C:\\Users\\Artur\\.gradle\\daemon\\8.0\\com.example.myapplication.app-main-47:\\mipmap-hdpi\\ic_launcher.webp"
-    },
-    {
-        "merged": "com.example.myapplication.app-merged_res-45:/menu_bottom_nav_menu.xml.flat",
-        "source": "com.example.myapplication.app-main-47:/menu/bottom_nav_menu.xml"
     },
     {
         "merged": "C:\\Users\\Artur\\.gradle\\daemon\\8.0\\com.example.myapplication.app-merged_res-45:\\drawable_food6.xml.flat",

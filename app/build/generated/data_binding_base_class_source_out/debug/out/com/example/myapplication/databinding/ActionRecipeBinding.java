@@ -4,6 +4,7 @@ package com.example.myapplication.databinding;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.recyclerview.widget.RecyclerView;
@@ -20,14 +21,18 @@ public final class ActionRecipeBinding implements ViewBinding {
   private final SwipeRefreshLayout rootView;
 
   @NonNull
+  public final TextView Problem;
+
+  @NonNull
   public final RecyclerView recipesRecyclerView;
 
   @NonNull
   public final SwipeRefreshLayout refreshLayout;
 
-  private ActionRecipeBinding(@NonNull SwipeRefreshLayout rootView,
+  private ActionRecipeBinding(@NonNull SwipeRefreshLayout rootView, @NonNull TextView Problem,
       @NonNull RecyclerView recipesRecyclerView, @NonNull SwipeRefreshLayout refreshLayout) {
     this.rootView = rootView;
+    this.Problem = Problem;
     this.recipesRecyclerView = recipesRecyclerView;
     this.refreshLayout = refreshLayout;
   }
@@ -59,6 +64,12 @@ public final class ActionRecipeBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
+      id = R.id.Problem;
+      TextView Problem = ViewBindings.findChildViewById(rootView, id);
+      if (Problem == null) {
+        break missingId;
+      }
+
       id = R.id.recipesRecyclerView;
       RecyclerView recipesRecyclerView = ViewBindings.findChildViewById(rootView, id);
       if (recipesRecyclerView == null) {
@@ -67,7 +78,7 @@ public final class ActionRecipeBinding implements ViewBinding {
 
       SwipeRefreshLayout refreshLayout = (SwipeRefreshLayout) rootView;
 
-      return new ActionRecipeBinding((SwipeRefreshLayout) rootView, recipesRecyclerView,
+      return new ActionRecipeBinding((SwipeRefreshLayout) rootView, Problem, recipesRecyclerView,
           refreshLayout);
     }
     String missingId = rootView.getResources().getResourceName(id);

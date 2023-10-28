@@ -12,10 +12,6 @@
         "source": "C:\\Users\\Artur\\.gradle\\daemon\\8.0\\com.example.myapplication.app-main-47:\\layout\\activity_main2.xml"
     },
     {
-        "merged": "com.example.myapplication.app-mergeDebugResources-44:/layout/action_recipe.xml",
-        "source": "com.example.myapplication.app-main-47:/layout/action_recipe.xml"
-    },
-    {
         "merged": "com.example.myapplication.app-mergeDebugResources-44:/layout/selected_recipe.xml",
         "source": "com.example.myapplication.app-main-47:/layout/selected_recipe.xml"
     },

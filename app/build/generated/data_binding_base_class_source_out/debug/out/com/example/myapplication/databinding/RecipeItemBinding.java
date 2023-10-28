@@ -4,7 +4,6 @@ package com.example.myapplication.databinding;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
@@ -21,15 +20,10 @@ public final class RecipeItemBinding implements ViewBinding {
   private final LinearLayout rootView;
 
   @NonNull
-  public final ImageView recipeImage;
-
-  @NonNull
   public final TextView recipeName;
 
-  private RecipeItemBinding(@NonNull LinearLayout rootView, @NonNull ImageView recipeImage,
-      @NonNull TextView recipeName) {
+  private RecipeItemBinding(@NonNull LinearLayout rootView, @NonNull TextView recipeName) {
     this.rootView = rootView;
-    this.recipeImage = recipeImage;
     this.recipeName = recipeName;
   }
 
@@ -60,19 +54,13 @@ public final class RecipeItemBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
-      id = R.id.recipe_image;
-      ImageView recipeImage = ViewBindings.findChildViewById(rootView, id);
-      if (recipeImage == null) {
-        break missingId;
-      }
-
       id = R.id.recipe_name;
       TextView recipeName = ViewBindings.findChildViewById(rootView, id);
       if (recipeName == null) {
         break missingId;
       }
 
-      return new RecipeItemBinding((LinearLayout) rootView, recipeImage, recipeName);
+      return new RecipeItemBinding((LinearLayout) rootView, recipeName);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

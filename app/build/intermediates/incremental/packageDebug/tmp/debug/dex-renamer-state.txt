@@ -1,4 +1,4 @@
-#Thu Oct 19 19:58:23 MSK 2023
+#Sat Oct 28 04:55:46 MSK 2023
 base.0=C\:\\Users\\Artur\\StudioProjects\\4\\app\\build\\intermediates\\dex\\debug\\mergeExtDexDebug\\classes.dex
 base.1=C\:\\Users\\Artur\\StudioProjects\\4\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\0\\classes.dex
 base.2=C\:\\Users\\Artur\\StudioProjects\\4\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\2\\classes.dex

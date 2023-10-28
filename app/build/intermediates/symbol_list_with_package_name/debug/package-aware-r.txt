@@ -83,8 +83,6 @@ animator nav_default_exit_anim
 animator nav_default_pop_enter_anim
 animator nav_default_pop_exit_anim
 array emails
-array food_descriptions
-array food_name
 array password
 array recipe_images
 array recipe_names
@@ -2872,9 +2870,12 @@ id ALT
 id BOTTOM_END
 id BOTTOM_START
 id CTRL
+id Calorie
+id Difficulty
 id FUNCTION
 id META
 id NO_DEBUG
+id Problem
 id SHIFT
 id SHOW_ALL
 id SHOW_PATH
@@ -2882,6 +2883,7 @@ id SHOW_PROGRESS
 id SYM
 id TOP_END
 id TOP_START
+id Time
 id accelerate
 id accessibility_action_clickable_span
 id accessibility_custom_action_0
@@ -3224,10 +3226,8 @@ id progress_horizontal
 id radio
 id ratio
 id recipeDescription
-id recipeImage
 id recipeListFragment
 id recipeTitle
-id recipe_image
 id recipe_name
 id recipesRecyclerView
 id rectangles

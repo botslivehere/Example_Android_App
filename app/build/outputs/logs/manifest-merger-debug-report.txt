@@ -1,9 +1,9 @@
 -- Merging decision tree log ---
 manifest
-ADDED from C:\Users\Artur\StudioProjects\4\app\src\main\AndroidManifest.xml:2:1-30:12
-INJECTED from C:\Users\Artur\StudioProjects\4\app\src\main\AndroidManifest.xml:2:1-30:12
-INJECTED from C:\Users\Artur\StudioProjects\4\app\src\main\AndroidManifest.xml:2:1-30:12
-INJECTED from C:\Users\Artur\StudioProjects\4\app\src\main\AndroidManifest.xml:2:1-30:12
+ADDED from C:\Users\Artur\StudioProjects\4\app\src\main\AndroidManifest.xml:2:1-33:12
+INJECTED from C:\Users\Artur\StudioProjects\4\app\src\main\AndroidManifest.xml:2:1-33:12
+INJECTED from C:\Users\Artur\StudioProjects\4\app\src\main\AndroidManifest.xml:2:1-33:12
+INJECTED from C:\Users\Artur\StudioProjects\4\app\src\main\AndroidManifest.xml:2:1-33:12
 MERGED from [androidx.databinding:viewbinding:8.1.2] C:\Users\Artur\.gradle\caches\transforms-3\0776c9b89b4fc945c2d2925447452c31\transformed\viewbinding-8.1.2\AndroidManifest.xml:2:1-7:12
 MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.1.0] C:\Users\Artur\.gradle\caches\transforms-3\be00b7a6832d3b8c9fed0a5418e439d6\transformed\swiperefreshlayout-1.1.0\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.navigation:navigation-ui:2.5.3] C:\Users\Artur\.gradle\caches\transforms-3\3f576c85ca02a0c2c8d86a839439855e\transformed\navigation-ui-2.5.3\AndroidManifest.xml:17:1-24:12
@@ -137,6 +137,10 @@ category#android.intent.category.LAUNCHER
 ADDED from C:\Users\Artur\StudioProjects\4\app\src\main\AndroidManifest.xml:25:17-77
 	android:name
 		ADDED from C:\Users\Artur\StudioProjects\4\app\src\main\AndroidManifest.xml:25:27-74
+uses-permission#android.permission.INTERNET
+ADDED from C:\Users\Artur\StudioProjects\4\app\src\main\AndroidManifest.xml:30:5-67
+	android:name
+		ADDED from C:\Users\Artur\StudioProjects\4\app\src\main\AndroidManifest.xml:30:22-64
 uses-sdk
 INJECTED from C:\Users\Artur\StudioProjects\4\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from C:\Users\Artur\StudioProjects\4\app\src\main\AndroidManifest.xml

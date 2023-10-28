@@ -4,7 +4,6 @@ package com.example.myapplication.databinding;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.ImageView;
 import android.widget.ScrollView;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
@@ -21,19 +20,28 @@ public final class SelectedRecipeBinding implements ViewBinding {
   private final ScrollView rootView;
 
   @NonNull
-  public final TextView recipeDescription;
+  public final TextView Calorie;
 
   @NonNull
-  public final ImageView recipeImage;
+  public final TextView Difficulty;
+
+  @NonNull
+  public final TextView Time;
+
+  @NonNull
+  public final TextView recipeDescription;
 
   @NonNull
   public final TextView recipeTitle;
 
-  private SelectedRecipeBinding(@NonNull ScrollView rootView, @NonNull TextView recipeDescription,
-      @NonNull ImageView recipeImage, @NonNull TextView recipeTitle) {
+  private SelectedRecipeBinding(@NonNull ScrollView rootView, @NonNull TextView Calorie,
+      @NonNull TextView Difficulty, @NonNull TextView Time, @NonNull TextView recipeDescription,
+      @NonNull TextView recipeTitle) {
     this.rootView = rootView;
+    this.Calorie = Calorie;
+    this.Difficulty = Difficulty;
+    this.Time = Time;
     this.recipeDescription = recipeDescription;
-    this.recipeImage = recipeImage;
     this.recipeTitle = recipeTitle;
   }
 
@@ -64,15 +72,27 @@ public final class SelectedRecipeBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
-      id = R.id.recipeDescription;
-      TextView recipeDescription = ViewBindings.findChildViewById(rootView, id);
-      if (recipeDescription == null) {
+      id = R.id.Calorie;
+      TextView Calorie = ViewBindings.findChildViewById(rootView, id);
+      if (Calorie == null) {
         break missingId;
       }
 
-      id = R.id.recipeImage;
-      ImageView recipeImage = ViewBindings.findChildViewById(rootView, id);
-      if (recipeImage == null) {
+      id = R.id.Difficulty;
+      TextView Difficulty = ViewBindings.findChildViewById(rootView, id);
+      if (Difficulty == null) {
+        break missingId;
+      }
+
+      id = R.id.Time;
+      TextView Time = ViewBindings.findChildViewById(rootView, id);
+      if (Time == null) {
+        break missingId;
+      }
+
+      id = R.id.recipeDescription;
+      TextView recipeDescription = ViewBindings.findChildViewById(rootView, id);
+      if (recipeDescription == null) {
         break missingId;
       }
 
@@ -82,8 +102,8 @@ public final class SelectedRecipeBinding implements ViewBinding {
         break missingId;
       }
 
-      return new SelectedRecipeBinding((ScrollView) rootView, recipeDescription, recipeImage,
-          recipeTitle);
+      return new SelectedRecipeBinding((ScrollView) rootView, Calorie, Difficulty, Time,
+          recipeDescription, recipeTitle);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

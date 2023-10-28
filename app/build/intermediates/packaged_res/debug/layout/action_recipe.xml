@@ -18,6 +18,17 @@
             android:gravity="center"
             />
 
+        <TextView
+            android:id="@+id/Problem"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Список пуст."
+            android:textSize="32sp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:visibility="gone"
+            />
+
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/recipesRecyclerView"
             android:layout_width="match_parent"

@@ -13,36 +13,48 @@
         android:padding="16dp">
 
         <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Вы выбрали:"
-            android:textSize="32sp"
-            android:layout_gravity="center"
-            android:gravity="center"
-            ></TextView>
-
-        <ImageView
-            android:id="@+id/recipeImage"
-            android:layout_width="200dp"
-            android:layout_height="200dp"
-            android:scaleType="centerCrop"
-            android:layout_gravity="center"
-            android:contentDescription="Some pictures"/>
-
-        <TextView
             android:id="@+id/recipeTitle"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:textSize="24sp"
+            android:textSize="32sp"
             android:layout_marginTop="16dp"
-            android:textStyle="bold"/>
+            android:textStyle="bold"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:paddingBottom="130dp"
+            />
+
+        <TextView
+            android:id="@+id/Calorie"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:layout_marginTop="8dp"
+            />
+
+        <TextView
+            android:id="@+id/Time"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:layout_marginTop="8dp"
+            />
 
         <TextView
             android:id="@+id/recipeDescription"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:textSize="16sp"
-            android:layout_marginTop="8dp"/>
+            android:textSize="18sp"
+            android:layout_marginTop="8dp"
+            />
+
+        <TextView
+            android:id="@+id/Difficulty"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:layout_marginTop="8dp"
+            />
 
         <View
             android:layout_width="match_parent"
