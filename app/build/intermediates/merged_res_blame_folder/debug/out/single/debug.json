@@ -64,6 +64,10 @@
         "source": "C:\\Users\\Artur\\.gradle\\daemon\\8.0\\com.example.myapplication.app-main-47:\\navigation\\mobile_navigation.xml"
     },
     {
+        "merged": "com.example.myapplication.app-merged_res-45:/layout_action_recipe.xml.flat",
+        "source": "com.example.myapplication.app-main-47:/layout/action_recipe.xml"
+    },
+    {
         "merged": "C:\\Users\\Artur\\.gradle\\daemon\\8.0\\com.example.myapplication.app-merged_res-45:\\drawable_food3.xml.flat",
         "source": "C:\\Users\\Artur\\.gradle\\daemon\\8.0\\com.example.myapplication.app-main-47:\\drawable\\food3.xml"
     },
@@ -76,12 +80,12 @@
         "source": "C:\\Users\\Artur\\.gradle\\daemon\\8.0\\com.example.myapplication.app-main-47:\\layout\\activity_main2.xml"
     },
     {
-        "merged": "C:\\Users\\Artur\\.gradle\\daemon\\8.0\\com.example.myapplication.app-merged_res-45:\\layout_action_recipe.xml.flat",
-        "source": "C:\\Users\\Artur\\.gradle\\daemon\\8.0\\com.example.myapplication.app-main-47:\\layout\\action_recipe.xml"
-    },
-    {
         "merged": "C:\\Users\\Artur\\.gradle\\daemon\\8.0\\com.example.myapplication.app-merged_res-45:\\drawable_food5.xml.flat",
         "source": "C:\\Users\\Artur\\.gradle\\daemon\\8.0\\com.example.myapplication.app-main-47:\\drawable\\food5.xml"
+    },
+    {
+        "merged": "C:\\Users\\Artur\\.gradle\\daemon\\8.0\\com.example.myapplication.app-merged_res-45:\\layout_action_recipe.xml.flat",
+        "source": "C:\\Users\\Artur\\.gradle\\daemon\\8.0\\com.example.myapplication.app-main-47:\\layout\\action_recipe.xml"
     },
     {
         "merged": "C:\\Users\\Artur\\.gradle\\daemon\\8.0\\com.example.myapplication.app-merged_res-45:\\layout_recipe_item.xml.flat",
@@ -110,10 +114,6 @@
     {
         "merged": "C:\\Users\\Artur\\.gradle\\daemon\\8.0\\com.example.myapplication.app-merged_res-45:\\drawable_food8.xml.flat",
         "source": "C:\\Users\\Artur\\.gradle\\daemon\\8.0\\com.example.myapplication.app-main-47:\\drawable\\food8.xml"
-    },
-    {
-        "merged": "com.example.myapplication.app-merged_res-45:/layout_selected_recipe.xml.flat",
-        "source": "com.example.myapplication.app-main-47:/layout/selected_recipe.xml"
     },
     {
         "merged": "C:\\Users\\Artur\\.gradle\\daemon\\8.0\\com.example.myapplication.app-merged_res-45:\\mipmap-xxxhdpi_ic_launcher_round.webp.flat",
