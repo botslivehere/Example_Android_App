@@ -7,7 +7,8 @@ import android.view.ViewGroup;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
-import androidx.constraintlayout.widget.ConstraintLayout;
+import androidx.recyclerview.widget.RecyclerView;
+import androidx.swiperefreshlayout.widget.SwipeRefreshLayout;
 import androidx.viewbinding.ViewBinding;
 import androidx.viewbinding.ViewBindings;
 import com.example.myapplication.R;
@@ -17,20 +18,29 @@ import java.lang.String;
 
 public final class ActionFavoritesBinding implements ViewBinding {
   @NonNull
-  private final ConstraintLayout rootView;
+  private final SwipeRefreshLayout rootView;
 
   @NonNull
-  public final TextView textNotifications;
+  public final TextView Problem2;
 
-  private ActionFavoritesBinding(@NonNull ConstraintLayout rootView,
-      @NonNull TextView textNotifications) {
+  @NonNull
+  public final RecyclerView favoriteRecipesRecyclerView;
+
+  @NonNull
+  public final SwipeRefreshLayout refreshLayout2;
+
+  private ActionFavoritesBinding(@NonNull SwipeRefreshLayout rootView, @NonNull TextView Problem2,
+      @NonNull RecyclerView favoriteRecipesRecyclerView,
+      @NonNull SwipeRefreshLayout refreshLayout2) {
     this.rootView = rootView;
-    this.textNotifications = textNotifications;
+    this.Problem2 = Problem2;
+    this.favoriteRecipesRecyclerView = favoriteRecipesRecyclerView;
+    this.refreshLayout2 = refreshLayout2;
   }
 
   @Override
   @NonNull
-  public ConstraintLayout getRoot() {
+  public SwipeRefreshLayout getRoot() {
     return rootView;
   }
 
@@ -55,13 +65,22 @@ public final class ActionFavoritesBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
-      id = R.id.text_notifications;
-      TextView textNotifications = ViewBindings.findChildViewById(rootView, id);
-      if (textNotifications == null) {
+      id = R.id.Problem2;
+      TextView Problem2 = ViewBindings.findChildViewById(rootView, id);
+      if (Problem2 == null) {
         break missingId;
       }
 
-      return new ActionFavoritesBinding((ConstraintLayout) rootView, textNotifications);
+      id = R.id.favoriteRecipesRecyclerView;
+      RecyclerView favoriteRecipesRecyclerView = ViewBindings.findChildViewById(rootView, id);
+      if (favoriteRecipesRecyclerView == null) {
+        break missingId;
+      }
+
+      SwipeRefreshLayout refreshLayout2 = (SwipeRefreshLayout) rootView;
+
+      return new ActionFavoritesBinding((SwipeRefreshLayout) rootView, Problem2,
+          favoriteRecipesRecyclerView, refreshLayout2);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

@@ -7,12 +7,14 @@ import android.os.Bundle;
 import android.widget.Button;
 import android.widget.EditText;
 
+import com.example.myapplication.db.AppDatabase;
+import com.example.myapplication.db.User;
+import com.example.myapplication.db.UserDao;
+
 
 public class MainActivity extends AppCompatActivity {
     Button btn;
     EditText mail,pass;
-    String[] emails,passwords;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -24,26 +26,30 @@ public class MainActivity extends AppCompatActivity {
 
     }
     protected void OnClick(){
-        boolean ok = false;
-        //current
         mail = findViewById(R.id.editTextTextEmailAddress);
         pass = findViewById(R.id.editTextTextPassword);
-        //all
-        emails = getResources().getStringArray(R.array.emails);
-        passwords = getResources().getStringArray(R.array.password);
-        for(int i=0;emails.length>i & passwords.length > i;i++){
-            if(mail.getText().toString().equals(emails[i]) && pass.getText().toString().equals(passwords[i])){
-                ok=true;
-            }
-        }
-        if (!ok) {
-           mail.setTextColor(getResources().getColor(R.color.red, null));
-           pass.setTextColor(getResources().getColor(R.color.red, null));
-       } else {
-            mail.setTextColor(getResources().getColor(R.color.black, null));
-            pass.setTextColor(getResources().getColor(R.color.black, null));
-           Intent intent = new Intent(MainActivity.this,MainActivity2.class);
-           startActivity(intent);
-       }
+
+        new Thread(() -> {
+            AppDatabase db = AppDatabase.getInstance(getApplicationContext());
+            UserDao userDao = db.userDao();
+            String loginToCheck = mail.getText().toString();
+            String passwordToCheck = pass.getText().toString();
+            final User authenticatedUser = userDao.authenticate(loginToCheck, passwordToCheck);
+            runOnUiThread(() -> {
+                if (authenticatedUser != null) {
+                    mail.setTextColor(getResources().getColor(R.color.black, null));
+                    pass.setTextColor(getResources().getColor(R.color.black, null));
+                    Intent intent = new Intent(MainActivity.this,MainActivity2.class);
+                    Bundle bundle = new Bundle();
+                    bundle.putInt("User_id",authenticatedUser.id);
+                    intent.putExtras(bundle);
+                    startActivity(intent);
+                }
+                else {
+                    mail.setTextColor(getResources().getColor(R.color.red, null));
+                    pass.setTextColor(getResources().getColor(R.color.red, null));
+                }
+            });
+        }).start();
     }
 }

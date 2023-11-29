@@ -82,10 +82,6 @@ animator nav_default_enter_anim
 animator nav_default_exit_anim
 animator nav_default_pop_enter_anim
 animator nav_default_pop_exit_anim
-array emails
-array password
-array recipe_images
-array recipe_names
 attr SharedValue
 attr SharedValueId
 attr action
@@ -2876,6 +2872,7 @@ id FUNCTION
 id META
 id NO_DEBUG
 id Problem
+id Problem2
 id SHIFT
 id SHOW_ALL
 id SHOW_PATH
@@ -2932,6 +2929,7 @@ id action_container
 id action_context_bar
 id action_divider
 id action_favorites
+id action_favorites_to_selectedRecipeFragment
 id action_image
 id action_menu_divider
 id action_menu_presenter
@@ -3058,6 +3056,7 @@ id exitUntilCollapsed
 id expand_activities_button
 id expanded_menu
 id fade
+id favoriteRecipesRecyclerView
 id fill
 id fill_horizontal
 id fill_vertical
@@ -3232,6 +3231,7 @@ id recipe_name
 id recipesRecyclerView
 id rectangles
 id refreshLayout
+id refreshLayout2
 id reverseSawtooth
 id right
 id rightToLeft
@@ -3341,7 +3341,6 @@ id textTop
 id text_input_end_icon
 id text_input_error_icon
 id text_input_start_icon
-id text_notifications
 id textinput_counter
 id textinput_error
 id textinput_helper_text

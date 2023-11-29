@@ -3,16 +3,20 @@ package com.example.myapplication;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.AdapterView;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
+
+import com.example.myapplication.db.Recipe;
 
 public class RecipeAdapter extends RecyclerView.Adapter<RecipeAdapter.ViewHolder> {
 
     public int currentItemCount = 10;
     private Recipe[] recipe = new Recipe[0];
     private OnItemClickListener listener;
+    private OnItemLongClickListener onItemLongClickListener;
 
     public RecipeAdapter(Recipe[] recipes) {
         this.recipe = recipes;
@@ -45,11 +49,13 @@ public class RecipeAdapter extends RecyclerView.Adapter<RecipeAdapter.ViewHolder
     public interface OnItemClickListener {
         void onItemClick(int position);
     }
-
+    public interface OnItemLongClickListener{
+        void onItemLongClick(int position);
+    }
     public void setOnItemClickListener(OnItemClickListener listener) {
         this.listener = listener;
     }
-
+    public void setOnItemLongClickListener(OnItemLongClickListener onItemLongClickListener) {this.onItemLongClickListener = onItemLongClickListener;}
     public class ViewHolder extends RecyclerView.ViewHolder {
         TextView recipeName;
         public ViewHolder(@NonNull View itemView, OnItemClickListener listener) {
@@ -62,6 +68,15 @@ public class RecipeAdapter extends RecyclerView.Adapter<RecipeAdapter.ViewHolder
                     listener.onItemClick(position);
                 }
             });
+
+            itemView.setOnLongClickListener(v -> {
+                int position = getAdapterPosition();
+                if (onItemLongClickListener != null && position != RecyclerView.NO_POSITION) {
+                    onItemLongClickListener.onItemLongClick(position);
+                }
+                return true;
+            });
+
         }
     }
 }

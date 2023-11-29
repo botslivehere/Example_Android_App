@@ -1,9 +1,5 @@
 R_DEF: Internal format may change without notice
 local
-array emails
-array password
-array recipe_images
-array recipe_names
 color black
 color ic_launcher_background
 color red
@@ -28,14 +24,17 @@ drawable ic_notifications_black_24dp
 id Calorie
 id Difficulty
 id Problem
+id Problem2
 id Time
 id action_favorites
+id action_favorites_to_selectedRecipeFragment
 id action_recipeListFragment_to_selectedRecipeFragment
 id action_selected_recipe
 id button
 id container
 id editTextTextEmailAddress
 id editTextTextPassword
+id favoriteRecipesRecyclerView
 id imageView
 id mobile_navigation
 id nav_host_fragment_activity_main2
@@ -46,7 +45,7 @@ id recipeTitle
 id recipe_name
 id recipesRecyclerView
 id refreshLayout
-id text_notifications
+id refreshLayout2
 layout action_favorites
 layout action_recipe
 layout activity_main

@@ -1,57 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string-array name="emails">
-        <item>1@mail.ru</item>
-        <item>2@mail.ru</item>
-        <item>3@mail.ru</item>
-        <item>4@mail.ru</item>
-        <item>5@mail.ru</item>
-    </string-array>
-    <string-array name="password">
-        <item>123</item>
-        <item>234</item>
-        <item>456</item>
-        <item>786</item>
-        <item>aaa</item>
-    </string-array>
-    <integer-array name="recipe_images">
-        <item>@drawable/food1</item>
-        <item>@drawable/food2</item>
-        <item>@drawable/food3</item>
-        <item>@drawable/food4</item>
-        <item>@drawable/food6</item>
-        <item>@drawable/food7</item>
-        <item>@drawable/food8</item>
-        <item>@drawable/food9</item>
-        <item>@drawable/food5</item>
-    </integer-array>
-    <string-array name="recipe_names">
-        <item>Рецепт 1</item>
-        <item>Рецепт 2</item>
-        <item>Рецепт 3</item>
-        <item>Рецепт 4</item>
-        <item>Рецепт 5</item>
-        <item>Рецепт 6</item>
-        <item>Рецепт 7</item>
-        <item>Рецепт 8</item>
-        <item>Рецепт 9</item>
-        <item>Рецепт 10</item>
-        <item>Рецепт 11</item>
-        <item>Рецепт 12</item>
-        <item>Рецепт 13</item>
-        <item>Рецепт 14</item>
-        <item>Рецепт 15</item>
-        <item>Рецепт 16</item>
-        <item>Рецепт 17</item>
-        <item>Рецепт 18</item>
-        <item>Рецепт 19</item>
-        <item>Рецепт 20</item>
-        <item>Рецепт 21</item>
-        <item>Рецепт 22</item>
-        <item>Рецепт 23</item>
-        <item>Рецепт 24</item>
-        <item>Рецепт 25</item>
-    </string-array>
     <color name="black">#FF000000</color>
     <color name="ic_launcher_background">#FFFFFF</color>
     <color name="red">#FF0000</color>

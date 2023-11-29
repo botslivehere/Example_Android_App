@@ -15,8 +15,12 @@
 
     <fragment
         android:id="@+id/action_favorites"
-        android:name="com.example.myapplication.ui.notifications.NotificationsFragment"
-        tools:layout="@layout/action_favorites" />
+        android:name="com.example.myapplication.FavoriteListRecipe"
+        tools:layout="@layout/action_favorites">
+    <action
+        android:id="@+id/action_favorites_to_selectedRecipeFragment"
+        app:destination="@id/action_selected_recipe" />
+    </fragment>
 
     <fragment
         android:id="@+id/recipeListFragment"

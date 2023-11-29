@@ -1,5 +1,7 @@
 package com.example.myapplication;
 
+import android.app.AlertDialog;
+import android.database.sqlite.SQLiteConstraintException;
 import android.os.Bundle;
 import android.os.Handler;
 import android.util.Log;
@@ -7,7 +9,6 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
-
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
@@ -16,11 +17,14 @@ import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 import androidx.swiperefreshlayout.widget.SwipeRefreshLayout;
 import androidx.navigation.fragment.NavHostFragment;
-
+import com.example.myapplication.db.AppDatabase;
+import com.example.myapplication.db.FavoriteRecipe;
+import com.example.myapplication.db.Favorite_recipeDao;
+import com.example.myapplication.db.Recipe;
+import com.example.myapplication.db.RecipeDao;
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
-
 import java.io.BufferedReader;
 import java.io.InputStream;
 import java.io.InputStreamReader;
@@ -50,28 +54,40 @@ public class RecipeListFragment extends Fragment {
 
         TextView problemTextView = getView().findViewById(R.id.Problem);
 
-        loadRecipesFromApi();
+        new Thread(() -> {
+            AppDatabase appDatabase = AppDatabase.getInstance(requireContext());
+            RecipeDao recipeDao = appDatabase.getRecipeDao();
+            if (recipeDao.getAllRecipes().isEmpty()) {
+                loadRecipesFromApi();
+            }
+            else{
+                recipe = recipeDao.getAllRecipes().toArray(new Recipe[0]);
+                selectedRecipeViewModel.setRecipesLoaded(true);
+            }
+        }).start();
 
         selectedRecipeViewModel.areRecipesLoaded().observe(getViewLifecycleOwner(), isLoaded -> {
             if (isLoaded) {
-                problemTextView.setVisibility(View.GONE);
-                recipesRecyclerView = view.findViewById(R.id.recipesRecyclerView);
-                refreshLayout = view.findViewById(R.id.refreshLayout);
+                        problemTextView.setVisibility(View.GONE);
+                        recipesRecyclerView = view.findViewById(R.id.recipesRecyclerView);
+                        refreshLayout = view.findViewById(R.id.refreshLayout);
 
-                adapter = new RecipeAdapter(recipe);
-                adapter.setOnItemClickListener(position -> navigateToSelectedRecipeFragment(position));
-                recipesRecyclerView.setAdapter(adapter);
-                recipesRecyclerView.setLayoutManager(new GridLayoutManager(getContext(), 2));
+                        adapter = new RecipeAdapter(recipe);
+                        adapter.setOnItemClickListener(position -> navigateToSelectedRecipeFragment(position));
+                        recipesRecyclerView.setAdapter(adapter);
+                        recipesRecyclerView.setLayoutManager(new GridLayoutManager(getContext(), 2));
 
-                recipesRecyclerView.addOnScrollListener(new RecyclerView.OnScrollListener() {
-                    @Override
-                    public void onScrolled(@NonNull RecyclerView recyclerView, int dx, int dy) {
-                        super.onScrolled(recyclerView, dx, dy);
-                        if (!recyclerView.canScrollVertically(1)) {
-                            loadMoreItems(adapter);
-                        }
-                    }
-                });
+                        recipesRecyclerView.addOnScrollListener(new RecyclerView.OnScrollListener() {
+                            @Override
+                            public void onScrolled(@NonNull RecyclerView recyclerView, int dx, int dy) {
+                                super.onScrolled(recyclerView, dx, dy);
+                                if (!recyclerView.canScrollVertically(1)) {
+                                    loadMoreItems(adapter);
+                                }
+                            }
+                        });
+                adapter.setOnItemLongClickListener(position -> showFavoritesDialog(recipe[position]));
+
             } else {
                 getActivity().runOnUiThread(() -> {
                     problemTextView.setVisibility(View.VISIBLE);
@@ -119,11 +135,13 @@ public class RecipeListFragment extends Fragment {
                     }
 
                     JSONArray recipesArray = new JSONArray(result.toString());
-                    recipe = new Recipe[recipesArray.length()];
+
+                    AppDatabase appDatabase = AppDatabase.getInstance(requireContext());
+                    RecipeDao recipeDao = appDatabase.getRecipeDao();
+
                     for (int i = 0; i < recipesArray.length(); i++) {
                         try {
                             JSONObject recipeObject = recipesArray.getJSONObject(i);
-
                             Recipe recipe_tmp = new Recipe();
                             recipe_tmp.setCalorie(recipeObject.getInt("Calorie"));
                             recipe_tmp.setTime(recipeObject.getInt("Time"));
@@ -131,18 +149,13 @@ public class RecipeListFragment extends Fragment {
                             recipe_tmp.setIngredients(recipeObject.getString("Ingredients"));
                             recipe_tmp.setDifficulty(recipeObject.getInt("Difficulty"));
 
-                            recipe[i]= recipe_tmp;
-
-                            Log.d("RecipeInfo", "Name: " + recipe[i].getName());
-                            Log.d("RecipeInfo", "Calorie: " + recipe[i].getCalorie());
-                            Log.d("RecipeInfo", "Time: " + recipe[i].getTime());
-                            Log.d("RecipeInfo", "Ingredients: " + recipe[i].getIngredients());
-                            Log.d("RecipeInfo", "Difficulty: " + recipe[i].getDifficulty());
+                            recipeDao.insert(recipe_tmp);
                         }
                         catch (JSONException e) {
                             e.printStackTrace();
                         }
                     }
+                    recipe = recipeDao.getAllRecipes().toArray(new Recipe[0]);
                     selectedRecipeViewModel.setRecipesLoaded(true);
                 }
             }
@@ -157,4 +170,34 @@ public class RecipeListFragment extends Fragment {
         }).start();
 
     }
+
+    private void showFavoritesDialog(Recipe recipe) {
+        AlertDialog.Builder builder = new AlertDialog.Builder(requireContext());
+        builder.setTitle("Add to Favorites")
+                .setMessage("Add this recipe to Favorites?")
+                .setPositiveButton("в избранное", (dialog, which) -> addToFavorites(recipe))
+                .setNegativeButton("отмена", (dialog, which) -> dialog.dismiss())
+                .show();
+    }
+
+    private void addToFavorites(Recipe recipe) {
+        Log.d("recipe",recipe.getName());
+        Log.d("recipe", String.valueOf(selectedRecipeViewModel.getCurrentUserId()));
+        new Thread(() -> {
+            AppDatabase appDatabase = AppDatabase.getInstance(requireContext());
+            Favorite_recipeDao favorite_recipeDao = appDatabase.getFavoriteRecipeDao();
+            FavoriteRecipe tmp = new FavoriteRecipe();
+            tmp.setRecipeId(recipe.getId());
+            tmp.setUserId(selectedRecipeViewModel.getCurrentUserId());
+            FavoriteRecipe[] selected = favorite_recipeDao.getFavoriteListByID(selectedRecipeViewModel.getCurrentUserId(), recipe.getId()).toArray(new FavoriteRecipe[0]);
+            if(selected.length == 0) {
+                try {
+                    favorite_recipeDao.insert(tmp);
+                } catch (SQLiteConstraintException e) {
+                    e.printStackTrace();
+                }
+            }
+        }).start();
+    }
+
 }
