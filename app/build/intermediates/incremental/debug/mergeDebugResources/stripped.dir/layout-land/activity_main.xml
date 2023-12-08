@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F9FBE7"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="150dp"
+            android:layout_height="124dp"
+            android:layout_gravity="center"
+            android:layout_marginStart="130dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="133dp"
+            android:layout_marginBottom="0dp"
+            app:srcCompat="@drawable/__"
+            tools:srcCompat="@drawable/__" />
+
+        <EditText
+            android:id="@+id/editTextTextEmailAddress"
+            android:layout_width="600dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:ems="10"
+            android:gravity="center"
+            android:hint="E-mail"
+            android:inputType="textEmailAddress"
+            android:minHeight="48dp" />
+
+        <EditText
+            android:id="@+id/editTextTextPassword"
+            android:layout_width="600dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="15dp"
+            android:ems="10"
+            android:gravity="center"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:minHeight="48dp" />
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="600dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="150dp"
+            android:backgroundTint="@android:color/holo_orange_light"
+            android:gravity="center"
+            android:text="Войти"
+            android:textColor="@color/cardview_shadow_start_color"
+            tools:ignore="TextContrastCheck" />
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
