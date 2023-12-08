@@ -3,6 +3,7 @@ package com.example.myapplication;
 import android.annotation.SuppressLint;
 import android.os.Bundle;
 import android.os.Handler;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -55,6 +56,14 @@ public class FavoriteListRecipe extends Fragment {
             recipe = new Recipe[favorites.length];
             for (int i = 0; favorites.length > i; i++) {
                 recipe[i] = recipeDao.GetRecipeByID((int) favorites[i].getRecipeId());
+                Log.d("favorite_recipe",
+                        "Id: "+recipe[i].getId()+'\n'+
+                        "Name: "+recipe[i].getName()+'\n'+
+                                "Ingredients: "+recipe[i].getIngredients()+'\n'+
+                                "Calorie: "+recipe[i].getCalorie()+'\n'+
+                                "Difficulty: "+recipe[i].getDifficulty() +'\n'+
+                                "Time: "+recipe[i].getTime()
+                );
             }
             if(favorites.length>0) selectedRecipeViewModel.setRecipesLoaded2(true);
             else selectedRecipeViewModel.setRecipesLoaded2(false);
